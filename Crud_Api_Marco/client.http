@@ -1,0 +1,27 @@
+GET http://localhost:3000/prestadores HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/prestadores HTTP/1.1
+Content-Type: application/json
+{
+    "codigo_prestador": 1,
+    "nome_prestador": "Marco",
+    "cpf_prestador": "999.999.999-99"
+}
+
+
+###
+PUT http://localhost:3000/prestadores HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_prestador": "Marco",
+    "cpf_prestador": "999.999.999-99"
+}
+###
+
+DELETE http://localhost:3000/prestadores/1 HTTP/1.1
+Content-Type: application/json
+
+###
